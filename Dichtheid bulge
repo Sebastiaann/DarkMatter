@@ -1,0 +1,21 @@
+double kilometer(double distance)
+{
+       return distance * 3.085678 * pow(10 , 16);
+}
+
+double kmh(double speed)
+{
+       return speed * 3600;
+}
+
+double frequency(double speed,double distance)
+{
+       return 1 / (2 * 3.14159 * kilometer) / kmh;
+       
+       // hier krijg ik de error:
+       // invalid operands of types "double" and "double()(double)" to binary "operator"
+}
+double density(double distance,double speed)
+{
+       return (3 * pow(frequency , 2) / 6.6726 * pow(10 , -11);
+}
